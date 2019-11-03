@@ -40,6 +40,25 @@ class Task
      */
     private $isDone;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="tasks")
+     */
+    private $user;
+
+
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+
+    public function setUser(?User $user): self
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
     public function __construct()
     {
         $this->createdAt = new \Datetime();
