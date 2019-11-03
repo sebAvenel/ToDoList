@@ -4,12 +4,29 @@ namespace App\Controller;
 
 use App\Entity\User;
 use App\Form\UserType;
+use App\Repository\UserRepository;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class UserController extends DefaultController
 {
+    /**
+     * @var UserRepository
+     */
+    private $userRepository;
+    /**
+     * @var UserPasswordEncoderInterface
+     */
+    private $passwordEncoder;
+
+    public function __construct(UserRepository $userRepository, UserPasswordEncoderInterface $passwordEncoder)
+    {
+        $this->userRepository = $userRepository;
+        $this->passwordEncoder = $passwordEncoder;
+    }
+
     /**
      * @Route("/users", name="user_list")
      */
@@ -31,6 +48,7 @@ class UserController extends DefaultController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $user->setPassword($this->passwordEncoder->encodePassword($user, $user->getPassword()));
             $em = $this->getDoctrine()->getManager();
             $em->persist($user);
             $em->flush();
@@ -52,11 +70,12 @@ class UserController extends DefaultController
     {
         $form = $this->createForm(UserType::class, $user);
 
+        dump($user);
+
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $password = $this->get('security.password_encoder')->encodePassword($user, $user->getPassword());
-            $user->setPassword($password);
+            $user->setPassword($this->passwordEncoder->encodePassword($user, $user->getPassword()));
 
             $this->getDoctrine()->getManager()->flush();
 
