@@ -62,12 +62,14 @@ class UserController extends DefaultController
 
     /**
      * @Route("/users/{id}/edit", name="user_edit")
-     * @param User $user
+     * @param int $id
      * @param Request $request
      * @return Response
      */
-    public function editAction(User $user, Request $request) : Response
+    public function editAction(int $id, Request $request) : Response
     {
+        $user = $this->userRepository->find($id);
+
         $form = $this->createForm(UserType::class, $user);
 
         dump($user);
