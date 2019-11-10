@@ -48,6 +48,7 @@ class UserController extends DefaultController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $user->setRoles($form->get('roles')->getData());
             $user->setPassword($this->passwordEncoder->encodePassword($user, $user->getPassword()));
             $em = $this->getDoctrine()->getManager();
             $em->persist($user);
@@ -71,8 +72,6 @@ class UserController extends DefaultController
         $user = $this->userRepository->find($id);
 
         $form = $this->createForm(UserType::class, $user);
-
-        dump($user);
 
         $form->handleRequest($request);
 
