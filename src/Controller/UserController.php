@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\User;
 use App\Form\UserType;
 use App\Repository\UserRepository;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -28,7 +29,8 @@ class UserController extends DefaultController
     }
 
     /**
-     * @Route("/users", name="user_list")
+     * @Route("/users/list", name="user_list")
+     * @IsGranted("ROLE_ADMIN")
      */
     public function listAction()
     {
@@ -55,16 +57,17 @@ class UserController extends DefaultController
             $em->flush();
             $this->addFlash('success', "L'utilisateur a bien été ajouté.");
 
-            return $this->redirectToRoute('user_list');
+            return $this->redirectToRoute('homepage');
         }
 
         return $this->render('user/create.html.twig', ['form' => $form->createView()]);
     }
 
     /**
-     * @Route("/users/{id}/edit", name="user_edit")
+     * @Route("/users/edit/{id}", name="user_edit")
      * @param int $id
      * @param Request $request
+     * @IsGranted("ROLE_USER")
      * @return Response
      */
     public function editAction(int $id, Request $request) : Response
