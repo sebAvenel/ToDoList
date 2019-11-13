@@ -67,7 +67,7 @@ class UserController extends DefaultController
      * @Route("/users/edit/{id}", name="user_edit")
      * @param int $id
      * @param Request $request
-     * @IsGranted("ROLE_ADMIN")
+     * @IsGranted("ROLE_USER")
      * @return Response
      */
     public function editAction(int $id, Request $request) : Response
