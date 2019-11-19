@@ -11,7 +11,7 @@ class SecurityController extends DefaultController
     /**
      * @Route("/login", name="login")
      * @param AuthenticationUtils $authenticationUtils
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @return Response
      */
     public function login(AuthenticationUtils $authenticationUtils) : Response
     {
