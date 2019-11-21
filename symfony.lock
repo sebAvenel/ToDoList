@@ -1,4 +1,19 @@
 {
+    "almasaeed2010/adminlte": {
+        "version": "v2.4.3"
+    },
+    "backpack/base": {
+        "version": "1.1.13"
+    },
+    "backpack/crud": {
+        "version": "3.6.33"
+    },
+    "composer/installers": {
+        "version": "v1.7.0"
+    },
+    "creativeorange/gravatar": {
+        "version": "v1.0.13"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -75,14 +90,47 @@
     "doctrine/reflection": {
         "version": "v1.0.0"
     },
+    "dragonmantank/cron-expression": {
+        "version": "v2.3.0"
+    },
     "egulias/email-validator": {
         "version": "2.1.11"
+    },
+    "erusev/parsedown": {
+        "version": "1.7.3"
+    },
+    "guzzlehttp/guzzle": {
+        "version": "6.4.1"
+    },
+    "guzzlehttp/promises": {
+        "version": "v1.3.1"
+    },
+    "guzzlehttp/psr7": {
+        "version": "1.6.1"
+    },
+    "intervention/image": {
+        "version": "2.5.1"
     },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
+    "laravel/framework": {
+        "version": "v6.5.2"
+    },
+    "laravel/helpers": {
+        "version": "v1.1.1"
+    },
+    "league/flysystem": {
+        "version": "1.0.57"
+    },
+    "monolog/monolog": {
+        "version": "2.0.1"
+    },
     "myclabs/deep-copy": {
         "version": "1.9.3"
+    },
+    "nesbot/carbon": {
+        "version": "2.27.0"
     },
     "nikic/php-parser": {
         "version": "v4.2.5"
@@ -92,6 +140,9 @@
     },
     "ocramius/proxy-manager": {
         "version": "2.2.3"
+    },
+    "opis/closure": {
+        "version": "3.4.1"
     },
     "phar-io/manifest": {
         "version": "1.0.3"
@@ -107,6 +158,9 @@
     },
     "phpdocumentor/type-resolver": {
         "version": "1.0.1"
+    },
+    "phpoption/phpoption": {
+        "version": "1.5.2"
     },
     "phpspec/prophecy": {
         "version": "1.9.0"
@@ -141,14 +195,29 @@
             "./tests/.gitignore"
         ]
     },
+    "prologue/alerts": {
+        "version": "0.4.5"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
     "psr/container": {
         "version": "1.0.0"
     },
+    "psr/http-message": {
+        "version": "1.0.1"
+    },
     "psr/log": {
         "version": "1.1.1"
+    },
+    "psr/simple-cache": {
+        "version": "1.0.1"
+    },
+    "ralouphie/getallheaders": {
+        "version": "3.0.3"
+    },
+    "ramsey/uuid": {
+        "version": "3.8.0"
     },
     "sebastian/code-unit-reverse-lookup": {
         "version": "1.0.1"
@@ -225,6 +294,9 @@
             "bin/console",
             "config/bootstrap.php"
         ]
+    },
+    "symfony/css-selector": {
+        "version": "v4.3.8"
     },
     "symfony/debug": {
         "version": "v4.3.5"
@@ -396,6 +468,19 @@
             "config/packages/test/swiftmailer.yaml"
         ]
     },
+    "symfony/translation": {
+        "version": "3.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.3",
+            "ref": "2ad9d2545bce8ca1a863e50e92141f0b9d87ffcd"
+        },
+        "files": [
+            "./config/packages/translation.yaml",
+            "./translations/.gitignore"
+        ]
+    },
     "symfony/translation-contracts": {
         "version": "v1.1.7"
     },
@@ -464,8 +549,17 @@
     "theseer/tokenizer": {
         "version": "1.1.3"
     },
+    "tijsverkoyen/css-to-inline-styles": {
+        "version": "2.2.2"
+    },
     "twig/twig": {
         "version": "v2.12.1"
+    },
+    "venturecraft/revisionable": {
+        "version": "1.33.0"
+    },
+    "vlucas/phpdotenv": {
+        "version": "v3.6.0"
     },
     "webmozart/assert": {
         "version": "1.5.0"

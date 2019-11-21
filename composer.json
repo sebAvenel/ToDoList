@@ -19,7 +19,8 @@
         "symfony/swiftmailer-bundle": "^3.3",
         "symfony/twig-bundle": "4.3.*",
         "symfony/validator": "4.3.*",
-        "symfony/yaml": "4.3.*"
+        "symfony/yaml": "4.3.*",
+        "backpack/crud": "^3.0.5"
     },
     "require-dev": {
         "symfony/maker-bundle": "^1.14",
