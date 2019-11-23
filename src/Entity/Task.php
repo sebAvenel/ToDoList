@@ -86,6 +86,9 @@ class Task
 
     public function setTitle($title)
     {
+        if (!is_string($title)){
+            throw new \TypeError('The type must be string');
+        }
         $this->title = $title;
     }
 
@@ -96,6 +99,12 @@ class Task
 
     public function setContent($content)
     {
+        if (strlen($content) < 1){
+            throw new \LengthException('The content must at least contain a letter');
+        }
+        elseif (!is_string($content)){
+            throw new \TypeError('The type must be string');
+        }
         $this->content = $content;
     }
 
@@ -114,8 +123,11 @@ class Task
         return $this->isDone;
     }
 
-    public function setIsDone(bool $isDone): self
+    public function setIsDone($isDone): self
     {
+        if (!is_bool($isDone)){
+            throw new \TypeError('The type must be boolean');
+        }
         $this->isDone = $isDone;
 
         return $this;

@@ -67,6 +67,12 @@ class User implements UserInterface
 
     public function setUsername($username)
     {
+        if (strlen($username) < 1){
+            throw new \LengthException('The content must at least contain a letter');
+        }
+        if (!is_string($username)){
+            throw new \TypeError('The type must be string');
+        }
         $this->username = $username;
     }
 
