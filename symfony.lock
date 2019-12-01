@@ -78,6 +78,9 @@
     "egulias/email-validator": {
         "version": "2.1.11"
     },
+    "fzaninotto/faker": {
+        "version": "v1.9.0"
+    },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
@@ -204,6 +207,9 @@
     "symfony/asset": {
         "version": "v4.3.5"
     },
+    "symfony/browser-kit": {
+        "version": "v4.3.8"
+    },
     "symfony/cache": {
         "version": "v4.3.5"
     },
@@ -226,6 +232,9 @@
             "config/bootstrap.php"
         ]
     },
+    "symfony/css-selector": {
+        "version": "v4.3.8"
+    },
     "symfony/debug": {
         "version": "v4.3.5"
     },
@@ -235,8 +244,14 @@
     "symfony/doctrine-bridge": {
         "version": "v4.3.5"
     },
+    "symfony/dom-crawler": {
+        "version": "v4.3.8"
+    },
     "symfony/dotenv": {
         "version": "v4.3.5"
+    },
+    "symfony/error-handler": {
+        "version": "v4.4.1"
     },
     "symfony/event-dispatcher": {
         "version": "v4.3.5"

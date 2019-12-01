@@ -2,8 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b8ff459-9050-466c-91ae-7afb2093518c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Controller/DefaultController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Controller/DefaultController.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Controller/SecurityController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Controller/SecurityController.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Controller/TaskController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Controller/TaskController.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Controller/UserController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Controller/UserController.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Controller/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Controller/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Controller/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Controller/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Entity/Task.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Entity/Task.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Entity/User.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Entity/User.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Entity/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Entity/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Entity/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Entity/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Form/TaskType.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Form/TaskType.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Form/UserType.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Form/UserType.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Form/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Form/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Form/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Form/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Repository/TaskRepository.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Repository/TaskRepository.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Repository/UserRepository.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Repository/UserRepository.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Repository/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Repository/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Repository/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Repository/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
       <path value="$PROJECT_DIR$/vendor/psr/log" />
@@ -129,12 +150,18 @@
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
     </include_path>
   </component>
   <component name="ProjectId" id="1TqeeQlI4SQhT1aSOxDomPpujfy" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Entity" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
@@ -163,11 +190,40 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.TaskControllerTest.testDeleteTaskActionConnectedUser2">
+    <configuration name="TaskControllerTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="App\Tests\Controller\TaskControllerTest" file="$PROJECT_DIR$/tests/Controller/TaskControllerTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TaskControllerTest.testCreateAction" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="App\Tests\Controller\TaskControllerTest" file="$PROJECT_DIR$/tests/Controller/TaskControllerTest.php" method="testCreateAction" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TaskControllerTest.testDeleteTaskActionConnectedUser" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="App\Tests\Controller\TaskControllerTest" file="$PROJECT_DIR$/tests/Controller/TaskControllerTest.php" method="testDeleteTaskActionConnectedUser" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TaskControllerTest.testDeleteTaskActionConnectedUser2" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="App\Tests\Controller\TaskControllerTest" file="$PROJECT_DIR$/tests/Controller/TaskControllerTest.php" method="testDeleteTaskActionConnectedUser2" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TaskControllerTest.testListAction" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="App\Tests\Controller\TaskControllerTest" file="$PROJECT_DIR$/tests/Controller/TaskControllerTest.php" method="testListAction" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml.dist" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.TaskControllerTest.testDeleteTaskActionConnectedUser2" />
+        <item itemvalue="PHPUnit.TaskControllerTest.testCreateAction" />
+        <item itemvalue="PHPUnit.TaskControllerTest.testDeleteTaskActionConnectedUser" />
+        <item itemvalue="PHPUnit.TaskControllerTest" />
+        <item itemvalue="PHPUnit.TaskControllerTest.testListAction" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -186,7 +242,9 @@
       <workItem from="1573395066348" duration="12159000" />
       <workItem from="1573665563526" duration="132000" />
       <workItem from="1574192151669" duration="3591000" />
-      <workItem from="1574362520100" duration="9163000" />
+      <workItem from="1574362520100" duration="52402000" />
+      <workItem from="1575058051157" duration="4496000" />
+      <workItem from="1575063938085" duration="9774000" />
     </task>
     <servers />
   </component>

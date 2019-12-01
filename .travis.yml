@@ -5,3 +5,7 @@ php:
 script:
   - composer install
   - vendor/bin/phpunit
+
+branches:
+  only:
+    - units_tests
