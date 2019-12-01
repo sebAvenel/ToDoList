@@ -2,6 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b8ff459-9050-466c-91ae-7afb2093518c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Controller/DefaultController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Controller/DefaultController.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Controller/SecurityController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Controller/SecurityController.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Controller/TaskController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Controller/TaskController.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Controller/UserController.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Controller/UserController.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Controller/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Controller/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test-coverage/Controller/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Controller/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/test-coverage/Entity/Task.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Entity/Task.php.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/test-coverage/Entity/User.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Entity/User.php.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/test-coverage/Entity/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test-coverage/Entity/dashboard.html" afterDir="false" />
@@ -235,7 +244,7 @@
       <workItem from="1574192151669" duration="3591000" />
       <workItem from="1574362520100" duration="52402000" />
       <workItem from="1575058051157" duration="4496000" />
-      <workItem from="1575063938085" duration="8583000" />
+      <workItem from="1575063938085" duration="9774000" />
     </task>
     <servers />
   </component>
