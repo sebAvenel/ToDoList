@@ -19,6 +19,16 @@ class TaskRepository extends ServiceEntityRepository
         parent::__construct($registry, Task::class);
     }
 
+    public function findFirstElement()
+    {
+        return $this->createQueryBuilder('t')
+            ->orderBy('t.id', 'ASC')
+            ->setMaxResults(1)
+            ->getQuery()
+            ->getResult()
+            ;
+    }
+
     // /**
     //  * @return Task[] Returns an array of Task objects
     //  */

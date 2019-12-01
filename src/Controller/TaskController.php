@@ -5,7 +5,9 @@ namespace App\Controller;
 use App\Entity\Task;
 use App\Form\TaskType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class TaskController extends DefaultController
@@ -23,7 +25,7 @@ class TaskController extends DefaultController
     /**
      * @Route("/tasks/create", name="task_create")
      * @param Request $request
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     * @return RedirectResponse|Response
      * @IsGranted("ROLE_USER")
      */
     public function createAction(Request $request)
@@ -51,7 +53,7 @@ class TaskController extends DefaultController
      * @Route("/tasks/{id}/edit", name="task_edit")
      * @param Task $task
      * @param Request $request
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     * @return RedirectResponse|Response
      * @IsGranted("ROLE_USER")
      */
     public function editAction(Task $task, Request $request)
