@@ -1,3 +1,4 @@
+!src/Migrations/Version20191202211045.php
 src/Migrations*
 
 ###> symfony/framework-bundle ###
