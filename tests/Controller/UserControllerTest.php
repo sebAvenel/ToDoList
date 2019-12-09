@@ -62,7 +62,7 @@ class UserControllerTest extends WebTestCase
     {
         $faker = Factory::create();
         $this->httpClient->followRedirects();
-        $user = $this->entityManager->getRepository(User::class)->findFirstElement();
+        $user = $this->entityManager->getRepository(User::class)->findLastElement();
         $crawler = $this->httpClient->request('GET', '/users/edit/'. $user[0]->getId());
         $form = $crawler->selectButton('Modifier')->form();
         $form['user[username]'] = $faker->firstName;

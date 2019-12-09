@@ -9,6 +9,7 @@
         "fzaninotto/faker": "^1.9",
         "phpunit/phpunit": "^8.4",
         "sensio/framework-extra-bundle": "^5.5",
+        "symfony/apache-pack": "^1.0",
         "symfony/asset": "4.3.*",
         "symfony/browser-kit": "4.3.*",
         "symfony/console": "4.3.*",
@@ -26,6 +27,7 @@
         "symfony/yaml": "4.3.*"
     },
     "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "^3.3",
         "symfony/maker-bundle": "^1.14",
         "symfony/profiler-pack": "^1.0",
         "symfony/web-server-bundle": "4.3.*"

@@ -19,10 +19,10 @@ class UserRepository extends ServiceEntityRepository
         parent::__construct($registry, User::class);
     }
 
-    public function findFirstElement()
+    public function findLastElement()
     {
         return $this->createQueryBuilder('u')
-            ->orderBy('u.id', 'ASC')
+            ->orderBy('u.id', 'DESC')
             ->setMaxResults(1)
             ->getQuery()
             ->getResult()
