@@ -3,6 +3,7 @@
 namespace App\Tests\Controller;
 
 use App\Entity\Task;
+use App\Entity\User;
 use Doctrine\ORM\EntityManager;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
@@ -88,23 +89,30 @@ class TaskControllerTest extends WebTestCase
         $this->assertSame(1, $crawler->filter('div.alert.alert-success')->count());
     }
 
-    public function testDeleteTaskActionConnectedUser()
-    {
-        $this->httpClientConnected->followRedirects();
-        $task = $this->entityManager->getRepository(Task::class)->findFirstElement();
-        $crawler = $this->httpClientConnected->request('GET', '/tasks/'. $task[0]->getId() . '/delete');
-
-        $this->assertEquals(200, $this->httpClientConnected->getResponse()->getStatusCode());
-        $this->assertSame(1, $crawler->filter('html:contains("Superbe ! La tâche a bien été supprimée.")')->count());
-    }
-
+    /**
+     * Check if it is possible for a user to delete a task added by another user.
+     */
     public function testDeleteTaskActionConnectedUser2()
     {
+        $username = $this->httpClientConnected->getServerParameter('PHP_AUTH_USER');
+        $user = $this->entityManager->getRepository(User::class)->findOneBy(['username' => $username]);
+        $tasks = $this->entityManager->getRepository(Task::class)->findBy(['user' => $user]);
         $this->httpClientConnected2->followRedirects();
-        $task = $this->entityManager->getRepository(Task::class)->findFirstElement();
-        $crawler = $this->httpClientConnected2->request('GET', '/tasks/'. $task[0]->getId() . '/delete');
+        $crawler = $this->httpClientConnected2->request('GET', '/tasks/'. $tasks[0]->getId() . '/delete');
 
         $this->assertEquals(200, $this->httpClientConnected2->getResponse()->getStatusCode());
         $this->assertSame(1, $crawler->filter('html:contains("Oops ! Vous n\'êtes pas à l\'origine de cettte tâche, vous ne pouvez pas la supprimer.")')->count());
+    }
+
+    public function testDeleteTaskActionConnectedUser()
+    {
+        $username = $this->httpClientConnected->getServerParameter('PHP_AUTH_USER');
+        $user = $this->entityManager->getRepository(User::class)->findOneBy(['username' => $username]);
+        $tasks = $this->entityManager->getRepository(Task::class)->findBy(['user' => $user]);
+        $this->httpClientConnected->followRedirects();
+        $crawler = $this->httpClientConnected->request('GET', '/tasks/'. $tasks[0]->getId() . '/delete');
+
+        $this->assertEquals(200, $this->httpClientConnected->getResponse()->getStatusCode());
+        $this->assertSame(1, $crawler->filter('html:contains("Superbe ! La tâche a bien été supprimée.")')->count());
     }
 }
