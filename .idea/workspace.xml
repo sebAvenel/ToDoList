@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b8ff459-9050-466c-91ae-7afb2093518c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Controller/TaskControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/TaskControllerTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -172,7 +172,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.TaskControllerTest.testCreateAction">
+  <component name="RunManager" selected="PHPUnit.TaskControllerTest.testDeleteTaskActionConnectedUser2">
     <configuration name="TaskControllerTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="App\Tests\Controller\TaskControllerTest" file="$PROJECT_DIR$/tests/Controller/TaskControllerTest.php" scope="Class" />
       <method v="2" />
@@ -199,9 +199,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.TaskControllerTest.testCreateAction" />
         <item itemvalue="PHPUnit.TaskControllerTest.testDeleteTaskActionConnectedUser2" />
         <item itemvalue="PHPUnit.TaskControllerTest.testDeleteTaskActionConnectedUser" />
+        <item itemvalue="PHPUnit.TaskControllerTest.testCreateAction" />
         <item itemvalue="PHPUnit.TaskControllerTest" />
         <item itemvalue="PHPUnit.TaskControllerTest.testListAction" />
       </list>
@@ -227,7 +227,7 @@
       <workItem from="1574362520100" duration="52402000" />
       <workItem from="1575058051157" duration="4496000" />
       <workItem from="1575063938085" duration="9774000" />
-      <workItem from="1575888972124" duration="4417000" />
+      <workItem from="1575888972124" duration="9975000" />
     </task>
     <servers />
   </component>
