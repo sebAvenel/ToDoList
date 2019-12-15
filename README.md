@@ -58,23 +58,23 @@ Vous pouvez accéder aux informations de contribution en claquant [ici](https://
       ```
       
       ```bash
-      'php bin/console make:migration'
+      php bin/console make:migration
       ```
       
       ```bash
-      'php bin/console doctrine:migrations:migrate'
+      php bin/console doctrine:migrations:migrate
       ```
       
   * Création de données fictives pour tester le site:
   
       ```bash
-      'php bin/console doctrine:fixtures:load'
+      php bin/console doctrine:fixtures:load
       ```
     
   * Démarrage du serveur de symfony:
   
       ```bash
-      'php bin/console server:run'
+      php bin/console server:run
       ```
       
   * Renseigner l'URL suivante dans le navigateur:
