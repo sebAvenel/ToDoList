@@ -34,7 +34,7 @@ Php ainsi que Composer doivent être installés sur votre ordinateur afin de pou
 
 ## Informations
 
-Vous pouvez accéder aux informations de contribution en claquant [ici]()
+Vous pouvez accéder aux informations de contribution en claquant [ici](https://github.com/sebAvenel/ToDoList/blob/master/contribution.md)
 
 ## Installation
 
