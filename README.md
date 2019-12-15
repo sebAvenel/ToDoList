@@ -5,7 +5,7 @@ Projet numéro 8 de la formation PHP/Symfony d'OpenClassrooms qui consiste à am
 
 Voici les principales fonctionnalités disponibles suivant les différents statuts utilisateur:
 
-* Le visiteur:
+  * Le visiteur:
       * Créer un utilisateur.
   * L'utilisateur:
       * **Prérequis:** avoir créer son utilisateur.
