@@ -43,19 +43,39 @@ Vous pouvez accéder aux informations de contribution en claquant [ici](https://
       * Mamp : Répertoire 'htdocs'.
 
   * Ensuite placez-vous dans votre répertoire par le biais de votre console de commande (ou terminal) et renseignez la commande suivante:
-      * 'composer install' pour windows.
-      * 'php composer.phar install' pour Mac OS.
-    
+  
+      ```bash
+      'composer install' pour windows
+      ```
+      
+      ```bash
+      'php composer.phar install' pour Mac OS.
+      ```
+      
   * Création de la base de données:
-      * 'php bin/console doctrine:database:create'
-      * 'php bin/console make:migration'
-      * 'php bin/console doctrine:migrations:migrate'
-    
+      ```bash
+      php bin/console doctrine:database:create
+      ```
+      
+      ```bash
+      'php bin/console make:migration'
+      ```
+      
+      ```bash
+      'php bin/console doctrine:migrations:migrate'
+      ```
+      
   * Création de données fictives pour tester le site:
-      * 'php bin/console doctrine:fixtures:load'
+  
+      ```bash
+      'php bin/console doctrine:fixtures:load'
+      ```
     
   * Démarrage du serveur de symfony:
-      * 'php bin/console server:run'
+  
+      ```bash
+      'php bin/console server:run'
+      ```
       
   * Renseigner l'URL suivante dans le navigateur:
       * 'http://localhost:8000/'
