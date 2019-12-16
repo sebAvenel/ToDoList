@@ -19,15 +19,16 @@ env:
 # Update composer
 before-install:
   - composer self-update
+  - composer install --prefer-source --no-interaction --dev
 
 # Install composer dependencies,
 # Create database, schema and fixtures
 install:
   - composer install
   #- cp .env.dist .env
-  - php bin/console doctrine:database:create --env=test
-  - php bin/console doctrine:schema:create --env=test
-  - php bin/console doctrine:fixtures:load -n --env=test
+  - php bin/console doctrine:database:create
+  - php bin/console doctrine:schema:create
+  - php bin/console doctrine:fixtures:load -n
 
 # Run script
 script:
