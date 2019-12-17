@@ -50,7 +50,7 @@ class UserControllerTest extends WebTestCase
         $password = $faker->password;
         $form['user[password][first]'] = $password;
         $form['user[password][second]'] = $password;
-        $form['user[roles][0]'] = 'ROLE_ADMIN';
+        $form['user[roles]'] = 'ROLE_ADMIN';
         $form['user[email]'] = $faker->email;
         $crawler = $this->httpClient->submit($form);
 
@@ -66,7 +66,7 @@ class UserControllerTest extends WebTestCase
         $crawler = $this->httpClient->request('GET', '/users/edit/'. $user[0]->getId());
         $form = $crawler->selectButton('Modifier')->form();
         $form['user[username]'] = $faker->firstName;
-        $form['user[roles][0]'] = 'ROLE_USER';
+        $form['user[roles]'] = 'ROLE_USER';
         $password = $faker->password;
         $form['user[password][first]'] = $password;
         $form['user[password][second]'] = $password;
