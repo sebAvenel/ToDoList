@@ -74,7 +74,6 @@ class UserController extends DefaultController
     public function editAction(int $id, Request $request) : Response
     {
         $user = $this->userRepository->find($id);
-
         $form = $this->createForm(UserType::class, $user);
 
         $form->handleRequest($request);
