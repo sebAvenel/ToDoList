@@ -30,7 +30,7 @@ La qualité du code a été validé par [Code climate](https://codeclimate.com/)
 
 ## Prérequis
 
-Php ainsi que Composer doivent être installés sur votre ordinateur afin de pouvoir correctement lancé le blog.
+Php ainsi que Composer doivent être installés sur votre ordinateur afin de pouvoir correctement lancé l'application.
 
 ## Informations
 
@@ -62,13 +62,24 @@ Vous pouvez accéder aux informations de contribution en claquant [ici](https://
       ```
       
       ```bash
-      php bin/console doctrine:migrations:migrate
+      php bin/console doctrine:migrations:execute --up + le numéro de version du fichier de migration généré précédemment
       ```
       
   * Création de données fictives pour tester le site:
   
       ```bash
       php bin/console doctrine:fixtures:load
+      ```
+      
+  * (Optionnel) Remplacer l'utilisateur 'null' d'une tâche par l'utilisateur anonyme:
+  
+      ```bash
+      php bin/console doctrine:migrations:execute --up 20191202211045
+      ```
+  * (Optionnel) Pour annuler l'action précédente
+  
+      ```bash
+      php bin/console doctrine:migrations:execute --down 20191202211045
       ```
     
   * Démarrage du serveur de symfony:
