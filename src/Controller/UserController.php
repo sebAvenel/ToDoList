@@ -65,13 +65,14 @@ class UserController extends DefaultController
     }
 
     /**
-     * @Route("/users/edit/{id}", name="user_edit")
+     * @Route("/users/edit/{id}/{role_edit}", name="user_edit")
      * @param int $id
+     * @param string $role_edit
      * @param Request $request
-     * @IsGranted("ROLE_USER")
      * @return Response
+     * @IsGranted("ROLE_USER")
      */
-    public function editAction(int $id, Request $request) : Response
+    public function editAction(int $id, string $role_edit, Request $request) : Response
     {
         $user = $this->userRepository->find($id);
         $form = $this->createForm(UserType::class, $user);
@@ -85,7 +86,12 @@ class UserController extends DefaultController
 
             $this->addFlash('success', "L'utilisateur a bien été modifié");
 
-            return $this->redirectToRoute('user_list');
+            if ($role_edit === 'admin'){
+                return $this->redirectToRoute('user_list');
+            }
+
+            return $this->redirectToRoute('homepage');
+
         }
 
         return $this->render('user/edit.html.twig', ['form' => $form->createView(), 'user' => $user]);
