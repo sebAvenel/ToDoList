@@ -93,6 +93,20 @@ Vous pouvez accéder aux informations de contribution en claquant [ici](https://
       * Ou directement via votre serveur local:
           * Windows: http://localhost/todolist/public/
           * Mac: http://localhost:8888/todolist/public/
+          
+ ## Lancement des tests unitaires et fonctionnels
+ 
+  * tests simples:
+  
+      ```bash
+      vendor\bin\phpunit
+      ```
+      
+  * tests avec génération de couverture de tests:
+  
+      ```bash
+      vendor\bin\phpunit --coverage-html web/test-coverage
+      ```
  
  ## Outils utilisés
 
