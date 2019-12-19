@@ -30,7 +30,7 @@ La qualité du code a été validé par [Code climate](https://codeclimate.com/)
 
 ## Prérequis
 
-Php ainsi que Composer doivent être installés sur votre ordinateur afin de pouvoir correctement lancé l'application.
+Php ainsi que Composer doivent être installés sur votre ordinateur afin de pouvoir correctement lancer l'application.
 
 ## Informations
 
