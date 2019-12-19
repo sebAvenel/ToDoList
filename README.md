@@ -94,7 +94,9 @@ Vous pouvez accéder aux informations de contribution en claquant [ici](https://
           * Windows: http://localhost/todolist/public/
           * Mac: http://localhost:8888/todolist/public/
           
- ## Lancement des tests unitaires et fonctionnels
+ ## Tests
+ 
+ ### Tests unitaires et fonctionnels:
  
   * tests simples:
   
@@ -108,10 +110,18 @@ Vous pouvez accéder aux informations de contribution en claquant [ici](https://
       vendor\bin\phpunit --coverage-html web/test-coverage
       ```
       
+### Intégration continue
+
+  Afin d'assurer l'intégration continue sur vos tests unitaires et fonctionnels, il vous suffit de vous rendre sur [Travis CI]  (https://travis-ci.com/) puis de vous identifier avec votre compte GitHub et de selectionner le repository 'ToDoList'.
+  
+### Qualité du code
+
+Si vous souhaitez vous assurer de la qualité du code, rendez-vous sur [Code Climate](https://codeclimate.com/login/github/join) puis identifiez-vous avec votre compte GitHub et choisissez le repository 'ToDoList'.
+      
 ### Informations concernant les tests
 
   * Important:
-     * Il faut impérativement que [XDeug](https://xdebug.org/) soit installé afin que les tests soit lancés.
+     * Il faut impérativement que [XDebug](https://xdebug.org/) soit installé afin que les tests soit lancés.
      * Il faut impérativement que votre base de données contienne un utilisateur 'root' sans mot de passe.
  
  ## Outils utilisés
