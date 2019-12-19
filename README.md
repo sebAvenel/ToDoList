@@ -123,6 +123,10 @@ Si vous souhaitez vous assurer de la qualité du code, rendez-vous sur [Code Cli
   * Important:
      * Il faut impérativement que [XDebug](https://xdebug.org/) soit installé afin que les tests soit lancés.
      * Il faut impérativement que votre base de données contienne un utilisateur 'root' sans mot de passe.
+     
+### Performance
+
+Suivre la documentation de l'installation de [Blackfire](https://blackfire.io/docs/up-and-running/installation).
  
  ## Outils utilisés
 
@@ -130,6 +134,10 @@ Si vous souhaitez vous assurer de la qualité du code, rendez-vous sur [Code Cli
   * [Composer](https://getcomposer.org/)
   * [Bootstrap](https://getbootstrap.com/)
   * [Twig](https://twig.symfony.com/)
+  * [Phpunit](https://phpunit.de/)
+  * [Code Climate](https://codeclimate.com/)
+  * [Travis CI](https://travis-ci.com/)
+  * [Blackfire](https://blackfire.io/)
   
 ## Auteur
 
