@@ -107,6 +107,12 @@ Vous pouvez accéder aux informations de contribution en claquant [ici](https://
       ```bash
       vendor\bin\phpunit --coverage-html web/test-coverage
       ```
+      
+### Informations concernant les tests
+
+  * Important:
+     * Il faut impérativement que [XDeug](https://xdebug.org/) soit installé afin que les tests soit lancés.
+     * Il faut impérativement que votre base de données contienne un utilisateur 'root' sans mot de passe.
  
  ## Outils utilisés
 
