@@ -112,7 +112,7 @@ Vous pouvez accéder aux informations de contribution en claquant [ici](https://
       
 ### Intégration continue
 
-  Afin d'assurer l'intégration continue sur vos tests unitaires et fonctionnels, il vous suffit de vous rendre sur [Travis CI]  (https://travis-ci.com/) puis de vous identifier avec votre compte GitHub et de selectionner le repository 'ToDoList'.
+  Afin d'assurer l'intégration continue sur vos tests unitaires et fonctionnels, il vous suffit de vous rendre sur [Travis CI](https://travis-ci.com/) puis de vous identifier avec votre compte GitHub et de selectionner le repository 'ToDoList'.
   
 ### Qualité du code
 
