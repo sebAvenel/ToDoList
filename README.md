@@ -117,16 +117,16 @@ Vous pouvez accéder aux informations de contribution en claquant [ici](https://
 ### Qualité du code
 
 Si vous souhaitez vous assurer de la qualité du code, rendez-vous sur [Code Climate](https://codeclimate.com/login/github/join) puis identifiez-vous avec votre compte GitHub et choisissez le repository 'ToDoList'.
+
+### Performance
+
+Suivre la documentation de l'installation de [Blackfire](https://blackfire.io/docs/up-and-running/installation).
       
 ### Informations concernant les tests
 
   * Important:
-     * Il faut impérativement que [XDebug](https://xdebug.org/) soit installé afin que les tests soit lancés.
+     * Il faut impérativement que [XDebug](https://xdebug.org/) soit installé afin que les tests unitaires et fonctionnels soit lancés correctement.
      * Il faut impérativement que votre base de données contienne un utilisateur 'root' sans mot de passe.
-     
-### Performance
-
-Suivre la documentation de l'installation de [Blackfire](https://blackfire.io/docs/up-and-running/installation).
  
  ## Outils utilisés
 
